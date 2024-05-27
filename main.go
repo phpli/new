@@ -13,7 +13,6 @@ func main() {
 	println(utf8.RuneCountInString("早上好")) //字符数量与编码无关，用编码库来取下·
 	http.HandleFunc("/", home)
 	http.HandleFunc("/user", user)
-	fmt.Sprintf()
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
